@@ -29,9 +29,9 @@ function ServicesGrid() {
   const rightColumnData = SERVICE_DATA.slice(midpoint);
 
   return (
-    <>
+    <section>
       <WhoAreWe isMobile={true} />
-      <h1 className="title">Ne Yapıyoruz?</h1>
+      <h1 className="section-title">Ne Yapıyoruz?</h1>
       <div className="services-grid">
         <div className="services-column">
           {leftColumnData.map((service, index) => (
@@ -46,7 +46,7 @@ function ServicesGrid() {
           className="services-column"
           style={{
             transform: shouldUseOffset
-              ? `translateY(${offset * 0.1 * -1 + 150}px)`
+              ? `translateY(${offset * 0.15 * -1 + 250}px)`
               : "",
             willChange: "transform",
           }}
@@ -60,7 +60,7 @@ function ServicesGrid() {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

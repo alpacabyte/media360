@@ -5,13 +5,12 @@ function VideoSection() {
   return (
     <div className="header-video-container">
       <video
-        data-src="./src/assets/young.mp4"
-        autoPlay="autoplay"
-        loop="loop"
-        muted="muted"
-        defaultmuted=""
-        playsInline=""
         src={youngVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        data-src={youngVideo}
       ></video>
       <div className="tint"></div>
       <WhoAreWe />
