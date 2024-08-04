@@ -1,6 +1,10 @@
-function WhoAreWe() {
+function WhoAreWe({ isMobile } = false) {
   return (
-    <div className="who-are-we">
+    <div
+      className={
+        "who-are-we" + (isMobile ? " who-are-we-mobile" : " who-are-we-desktop")
+      }
+    >
       <h2 className="title">Biz Kimiz?</h2>
       <p className="description">
         Markalarımız için yenilikçi deneyimler yaratıyoruz. Veri ve teknoloji

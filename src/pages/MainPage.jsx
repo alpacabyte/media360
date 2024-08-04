@@ -1,5 +1,4 @@
 import "../App.css";
-import React, { useEffect } from "react";
 import ServicesGrid from "../components/ServicesGrid";
 import HeaderNav from "../components/HeaderNav";
 import VideoSection from "../components/VideoSection";
