@@ -1,4 +1,5 @@
 import WhoAreWe from "./WhoAreWe";
+import youngVideo from "../assets/young.mp4";
 
 function VideoSection() {
   return (
@@ -10,7 +11,7 @@ function VideoSection() {
         muted="muted"
         defaultmuted=""
         playsInline=""
-        src="./src/assets/young.mp4"
+        src={youngVideo}
       ></video>
       <div className="tint"></div>
       <WhoAreWe />
