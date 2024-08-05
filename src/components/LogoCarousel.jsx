@@ -11,12 +11,22 @@ function LogoCarousel({ logos, title }) {
     };
 
     if (carouselRef.current) {
+      console.log({
+        width: carouselRef.current.offsetWidth,
+        speed: 50,
+        duration: carouselRef.current.offsetWidth / 50,
+      });
       setTimeout(() => {
         const width = carouselRef.current.offsetWidth;
         const speed = 50;
         const duration = width / speed;
+        console.log({
+          width: carouselRef.current.offsetWidth,
+          speed: 50,
+          duration: carouselRef.current.offsetWidth / 50,
+        });
         setAnimationDuration(duration);
-      }, 10);
+      }, 500);
     }
   }, []);
 
