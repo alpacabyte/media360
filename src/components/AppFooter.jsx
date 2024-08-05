@@ -8,13 +8,13 @@ function AppFooter() {
       </a>
       <div className="footer-nav">
         <a href="" className="nav-tab">
-          Services
+          Servislerimiz
         </a>
         <a href="" className="nav-tab">
-          Contanct
+          İletişim
         </a>
         <a href="" className="nav-tab">
-          About Us
+          Hakkımızda
         </a>
       </div>
       <h3>© Media360 - Tüm Haklarımız Saklıdır.</h3>

@@ -4,13 +4,13 @@ function HeaderNav() {
   return (
     <header className="header-nav">
       <a href="" className="nav-tab">
-        Services
+        Hizmetlerimiz
       </a>
       <a href="">
         <img src={media360Logo} width={"200px"} alt="" />
       </a>
       <a href="" className="nav-tab">
-        About Us
+        Hakkımızda
       </a>
     </header>
   );

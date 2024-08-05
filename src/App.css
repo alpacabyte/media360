@@ -334,3 +334,15 @@
 .app-footer h3 {
   font-size: 1rem;
 }
+
+@media all and (max-width: 700px) {
+  .footer-nav {
+    flex-direction: column;
+  }
+}
+
+@media (hover: none) {
+  .nav-tab:hover::after {
+    width: initial;
+  }
+}
