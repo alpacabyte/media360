@@ -4,6 +4,7 @@ import HeaderNav from "../components/HeaderNav";
 import VideoSection from "../components/VideoSection";
 import LogoCarousel from "../components/LogoCarousel";
 import { PARTNERS_LOGOS, REFERENCES_LOGOS } from "../utils/constants";
+import AppFooter from "../components/AppFooter";
 
 function MainPage() {
   return (
@@ -17,7 +18,7 @@ function MainPage() {
           <LogoCarousel logos={REFERENCES_LOGOS} title={"Referanslarımız"} />
         </div>
       </div>
-      <footer className="app-footer"></footer>
+      <AppFooter />
     </>
   );
 }

@@ -2,6 +2,7 @@
   --primary-color: white;
   --secondary-color: #f2f2f2;
   --accent-color: #ad0000;
+  --accent-color-opacity: #ad0000a1;
   --neutral-color: #cccccc;
   --text-color: #333333;
   --border-radius: 20px;
@@ -234,15 +235,9 @@
 }
 
 .carousel-container {
-  border: 1px solid var(--accent-color);
-  border-radius: var(--border-radius);
-  margin: 0 auto;
   padding: 20px 0;
   height: 150px;
-}
-
-.carousel-container:hover .logos-slide {
-  animation-play-state: paused;
+  margin: 0 -40px;
 }
 
 .logo-carousel {
@@ -282,7 +277,9 @@
 
 .logos-slide {
   height: 100%;
-  animation: 25s slide infinite linear;
+  animation-timing-function: linear;
+  animation-name: slide;
+  animation-iteration-count: infinite;
   display: inline-block;
   width: max-content;
 }
@@ -314,5 +311,26 @@
 }
 
 .app-footer {
-  height: 500px;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  background-color: var(--accent-color-opacity);
+}
+
+.footer-nav {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  top: 20px;
+}
+
+.app-footer h3 {
+  font-size: 1rem;
 }
